@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <tittle>Document</tittle>
+  <script>
+    //var num = prompt("Enter anumber: ");
+    //document.write("<p>value : "+num+"<p>);
+    //if(num%2==0){
+    //document.write("Even");
+    //}
+    //else{
+    //document.write("odd");
+   // }
+    
+    function evenOdd(){
+        let num = document.getElementByid("numinp").value;
+        let output = "";
+        if(num%2==0){
+            output ="Even";
+        }
+        else{
+           output = "odd";
+        }
+      document.getElementbyId("output").innerHTML=output;
+    }
+  </script>
+  </head>
+  <body>
+    Enter a number : <input type="number" id="numinp" onchange="evenodd()">
+    <button on click="evenodd()">Enter</button>
+    <h3 id="output"></h3>
+  </body>
+  
+</html>
+    
